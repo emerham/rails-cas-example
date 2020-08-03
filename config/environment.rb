@@ -40,7 +40,4 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   require 'cas_auth'
   CAS::Filter.cas_base_url = "https://login.oregonstate.edu/cas"
-  CASClient::Frameworks::Rails::Filter.configure(
-    :cas_base_url => "https://login.oregonstate.edu/cas"
-  )
 end
